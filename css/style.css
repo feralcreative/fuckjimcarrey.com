@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.content {
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+p {
+  font-family: sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+
+/* DESKTOP */
+@media (min-width:1025px) {}
+
+/* TABLET */
+@media (min-width:768px) and (max-width:1024px) {}
+
+/* MOBILE */
+@media (max-width:767px) {
+  .content {
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+  }
+
+  p {
+    font-family: sans-serif;
+    margin: 0;
+    color: #fff;
+  }
+
+}
