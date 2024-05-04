@@ -13,20 +13,23 @@ video {
 
 .content {
   padding: 25px;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.3); */
   position: absolute;
   right: 50px;
   bottom: 50px;
 }
 
-p {
+.content > p {
   font-family: sans-serif;
   margin: 0;
   color: #fff;
+  font-size: 24px;
+  text-shadow: #000 3px 3px 0;
+
 }
 
 a {
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
@@ -35,28 +38,20 @@ a:hover {
   text-decoration: underline;
 }
 
-/* DESKTOP */
-@media (min-width:1025px) {}
-
-/* TABLET */
-@media (min-width:768px) and (max-width:1024px) {}
-
 /* MOBILE */
-@media (max-width:767px) {
+@media screen and (max-width:767px) {
   .content {
     padding: 10vw;
-    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
-    width: 100vw;
+    width: 80vw;
     left: 0;
-    bottom: 0;
+    bottom: 72px;
   }
 
-  p {
+  .content > p {
     font-family: sans-serif;
     margin: 0;
-    color: #fff;
-    font-size: 1.8em;
+    font-size: 6vw !important;
   }
 
 }
