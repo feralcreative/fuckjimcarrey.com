@@ -1,11 +1,9 @@
-html,
-body {
-  background-color: white;
-}
+@charset "UTF-8";
+
+/* CSS Document */
 
 video {
-  display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -15,10 +13,10 @@ video {
 
 .content {
   padding: 25px;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  position: absolute;
+  right: 50px;
   bottom: 50px;
-  width: 50vw;
-  margin: 75vh auto 5vh auto;
 }
 
 .content > p {
@@ -31,33 +29,29 @@ video {
 }
 
 a {
+  color: #fff !important;
   text-decoration: none;
-  color: white;
 }
 
 a:hover {
+  color: #f00;
   text-decoration: underline;
-  color: #f00;
 }
-
-p.brand a {
-  color: #f00;
-  font-size: 0.7em;
-  position: fixed;
-  bottom: 1vh;
-  left: 47vw;
-}
-
-/* DESKTOP */
-@media (min-width:1025px) {}
-
-/* TABLET */
-@media (min-width:768px) and (max-width:1024px) {}
 
 /* MOBILE */
-@media (max-width:767px) {
-  .content p {
-    font-size: 2em;
+@media screen and (max-width:767px) {
+  .content {
+    padding: 10vw;
+    position: absolute;
+    width: 80vw;
+    left: 0;
+    bottom: 72px;
+  }
+
+  .content > p {
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 6vw !important;
   }
 
 }
