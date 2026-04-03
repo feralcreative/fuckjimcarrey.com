@@ -1,6 +1,6 @@
 **/.DS_Store
 **/_*
 .vscode/
-css/style.css
-css/style.min.css
-css/*.map
+style/style.css
+style/style.min.css
+style/*.map

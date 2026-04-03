@@ -9,11 +9,10 @@ A single-page site hosting a profoundly racist clip of Jim Carrey in brownface p
 ```text
 /
 ├── index.html
-├── css/
-│   ├── style.css        # source
-│   └── style.min.css    # compiled/minified
-├── media/               # video and image assets
-└── _assets/             # working/source assets
+├── style/
+│   ├── style.scss       # source
+│   └── style.min.css    # compiled — gitignored
+└── media/               # video and image assets
 ```
 
 ## Dev
@@ -21,7 +20,13 @@ A single-page site hosting a profoundly racist clip of Jim Carrey in brownface p
 Compile CSS with:
 
 ```bash
-npx sass css/style.css css/style.min.css --style=compressed
+sass style/style.scss style/style.min.css --style=compressed
+```
+
+Watch mode:
+
+```bash
+sass --watch style/style.scss:style/style.min.css
 ```
 
 ## Notes
